@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Api\ProjectController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -14,11 +15,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/projects', function() {
-    return response()->json([
-        'type1' => "Backend",
-        'type2' => "Full Stack",
-        'type3' => "Portofolio website",
-        'type4' => "Ecommerce"
-    ]);
-});
+Route::get('/projects', [ProjectController::class, 'index']);
