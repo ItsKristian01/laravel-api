@@ -19,6 +19,6 @@ Route::get('/projects', function() {
         'type1' => "Backend",
         'type2' => "Full Stack",
         'type3' => "Portofolio website",
-        'type4' => "Eccomerce"
+        'type4' => "Ecommerce"
     ]);
 });
